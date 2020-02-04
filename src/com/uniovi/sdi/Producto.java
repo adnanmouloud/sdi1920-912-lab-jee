@@ -10,6 +10,11 @@ public class Producto {
 	this.imagen = imagen;
 	this.precio = precio;
 	}
+	
+	public Producto(){
+	}
+	
+	
 	public String getNombre() {
 	return nombre;
 	}
