@@ -62,23 +62,6 @@
 					</div>
 				</div>
 			</c:forEach>
-
-			<%
-				List<Producto> listaProductos = new ProductosService().getProductos();
-				for (Producto producto : listaProductos) {
-			%>
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-				<div>
-					<img src="<%=producto.getImagen()%>" />
-					<div><%=producto.getNombre()%></div>
-					<a href="incluirEnCarrito?producto=<%=producto.getNombre()%>"
-						class="btn btndefault"> <%=producto.getPrecio()%> €
-					</a>
-				</div>
-			</div>
-			<%
-				}
-			%>
 		</div>
 
 	</div>
